@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     private Toolbar mToolbar;
+    FragmentManager fragmentManager = getSupportFragmentManager();
+
 
 
     @Override
@@ -40,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         setupDrawerContent(nvDrawer);
+
+        fragmentManager.beginTransaction().replace(R.id.content,new Primeros_Auxilios()).commit();
+
     }
 
     @Override
@@ -52,14 +58,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //CAMBIO DE PAGINAS NAVIGATION DRAWER
-    public void selectItemDrawer(MenuItem menuItem){
+    public void selectItemDrawer(MenuItem menuItem)  {
         Fragment myFragment = null;
-        Class fragmentClass;
-        switch(menuItem.getItemId()){
-            case R.id.nav_inicio:
-                fragmentClass = Inicio.class;
+        Class fragmentClass ;
 
-                break;
+
+        switch(menuItem.getItemId()){
 
             case R.id.nav_firstaid:
                 fragmentClass = Primeros_Auxilios.class;
@@ -73,10 +77,6 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = Map.class;
                 break;
 
-            case R.id.nav_credits:
-                fragmentClass = Creditos.class;
-                break;
-
                 default:
                     fragmentClass = Inicio.class;
         }
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         {
             e.printStackTrace();
         }
-        FragmentManager fragmentManager = getSupportFragmentManager();
+
         fragmentManager.beginTransaction().replace(R.id.content,myFragment).commit();
         menuItem.setChecked(true);
         setTitle(menuItem.getTitle());

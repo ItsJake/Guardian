@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Enfermedades">
+    tools:context=".Enfermedades"
+    android:background="#FFD5CF">
 
     <!-- TODO: Update blank fragment layout -->
     <include
@@ -17,18 +19,43 @@
         android:layout_height="match_parent"
         android:text="Enfermedades" />
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:textSize="24sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="126dp"
-        android:text="Lista Enfermedades" />
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="296dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/illmen" />
+
+        <Button
+            android:id="@+id/ill_0"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="217dp"
+            android:background="@drawable/btn_farc"
+            android:text="Resfriado Común"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/ill_1"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="132dp"
+            android:background="@drawable/btn_farc"
+            android:text="Diabetes"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
 </FrameLayout>

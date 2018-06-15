@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fat_ra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="88dp"
+            android:paddingLeft="15dp"
+            android:text="Respiración Artificial"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/fatra_paso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:text="Pasos a seguir:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fatra_paso1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:text="1. Asegúrese de que la vía aérea permanece abierta."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fatra_infp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fatra_paso1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:text="a) Asegúrese que la cabeza de la víctima permanezca levantada manteniendo una mano sobre su frente y dos dedos de la otra mano bajo el mentón." />
+
+        <TextView
+            android:id="@+id/fatra_paso2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fatra_infp1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="2. Pinzar la nariz y abrir la boca."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fatra_infp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fatra_paso2"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="a) Use pulgar e índice para pinzar firmemente la parte blanda de la nariz de la víctima.
+\n\nb) Asegúrese de que la nariz esté cerrada para evitar la salida del aire.
+\n\nc) Ábrale la boca.  "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fatra_paso3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fatra_infp2"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="3. Dar respiración artificial."
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fatra_infp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fatra_paso3"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="a) Haga una inspiración profunda. Rodee los labios de la víctima con los suyos, creando un sellado completo.
+\n\nb) Insufle aire hasta que se eleve el pecho. Esto le llevará dos segundos. Manténgale la cabeza inclinada y la barbilla arriba; retire la boca y vigila la bajada del pecho. Si baja visiblemente y por completo, habrá dado un insuflación efectiva.
+\n\nc) Haga dos insuflaciones efectivas."
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="219dp"
+            android:src="@drawable/respiracionartificial" />
+
+        <TextView
+            android:id="@+id/fatra_paso4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fatra_infp3"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="4. Comprobar los signos de circulación. "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fatra_infp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fatra_paso4"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:text="a) Mire, escuche y perciba signos de circulación (respiración, tos o movimiento) durante no más de 10 segundos.
+\n\nb) Si no hay circulación, ejecute RCP.
+\n\nc) Si hubiera circulación, continúe con la respiración asistida. Después de cada diez insuflaciones (1 minuto), compruebe de nuevo la circulación.
+\n\nd) Si la víctima respira pero sigue inconsciente, póngala en posición de seguridad."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

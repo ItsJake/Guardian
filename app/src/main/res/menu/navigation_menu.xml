@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/nav_inicio"
-        android:icon="@mipmap/baseline_person_black_24dp"
-        android:title="Inicio"/>
+
 
     <item android:id="@+id/nav_firstaid"
-        android:icon="@mipmap/baseline_person_black_24dp"
+        android:icon="@mipmap/baseline_local_hospital_black_24dp"
         android:title="Primeros Auxilios"/>
 
     <item android:id="@+id/nav_ill"
@@ -17,9 +15,6 @@
         android:icon="@mipmap/baseline_location_on_black_24dp"
         android:title="Mapa de Hospitales"/>
 
-    <item android:id="@+id/nav_credits"
-        android:icon="@mipmap/baseline_more_vert_black_24dp"
-        android:title="Créditos"/>
 
 
 

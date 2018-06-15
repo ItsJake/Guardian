@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fat_rcp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="88dp"
+            android:paddingLeft="15dp"
+            android:text="Reanimación Cardiopulmonar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="410dp"
+            android:layout_height="168dp"
+            app:srcCompat="@drawable/rcp" />
+
+        <TextView
+            android:id="@+id/fat_paso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:text="Pasos a seguir:"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/fat_paso1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="1. Verificar que no hay peligro en los alrededores "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fat_infp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp"
+            android:text="Por ejemplo, si la persona se encuentra en una ruta o en un edificio en ruinas debes procurar moverte para un lugar más seguro, siempre procurar cuidarse y cuidar a la persona. " />
+
+        <TextView
+            android:id="@+id/fat_paso2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="2. Verificar que la víctima está realmente inconsciente "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fat_infp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso2"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Para lograrlo llame a la persona, dele unos golpes leves en el hombro.  "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fat_paso3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp2"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="3. Verifique que la víctima no esta respirando "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fat_infp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso3"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Primero verifique que la víctima no tiene las vías respiratorios obstruidas por algún objeto. Luego, debe acercar su cara a la boca y nariz de la persona, y al acercar el costado de su rostro a la boca para escuchar o sentir la respiración y ver si el tórax aumenta de tamaño. Se utiliza esta técnica porque en muchas situaciones alguno de los sentidos se encuentra comprometido, por ejemplo la vista cuando es de noche. entonces al utilizar los tres sentidos se garantiza la correcta observación de ausencia o presencia de respiración.    "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fat_paso4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp3"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="4. Llamar a la emergencia. "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fat_infp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso4"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Transmitir claramente la situación, enfatizar en que la persona no está respirando, si hay más lesiones y la edad y condición física del individuo  "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fat_paso5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp4"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="5. Realizar la Reanimación "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fat_infp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso2"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:text="Coloca una mano directamente sobre el centro del pecho de la persona (por lo general, entre las tetillas) y la otra mano sobre ella para reforzarla. Presiona el pecho de la víctima con firmeza y rapidez; realiza aproximadamente 100 compresiones de pecho por minuto hasta que los paramédicos lleguen.
+\n\na)Si no sabes con certeza cómo deben realizarse 100 compresiones por minuto, hazlo al ritmo de la canción “Stain' Alive” de los Bee Gees.
+\n\nb)Presiona el pecho empleando el peso y la fuerza de la parte superior de tu cuerpo, no solo la fuerza del brazo.
+\n\nc)Las compresiones de pecho deben hacer que el pecho de la persona se hunda al menos 5 cm (2 pulgadas). Presiona con fuerza y ten en cuenta que es probable que rompas las costillas de la persona. Esto es muy común y no debes detener las compresiones incluso si crees que eso ha ocurrido.
+\n\nd)Las compresiones de pecho requieren un trabajo duro y podrías tener que turnarte con otros transeúntes antes de que llegue el personal de emergencias.
+\n\ne)Sigue haciéndolo hasta que la persona muestre alguna respuesta o hasta que el equipo médico de emergencias llegue y se encargue.  "
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="282dp"
+            app:srcCompat="@drawable/cprillustration" />
+
+
+    </LinearLayout>
+</ScrollView>

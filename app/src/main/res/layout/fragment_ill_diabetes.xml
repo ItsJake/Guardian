@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ill_diabetes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/endiab_diab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="88dp"
+            android:paddingLeft="15dp"
+            android:text="Diabetes"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:src="@drawable/diabetes" />
+
+        <TextView
+            android:id="@+id/endiab_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:text="¿Qué es?"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/endiab_def"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="La diabetes es una enfermedad en la que los niveles de glucosa (azúcar) de la sangre están muy altos. La glucosa proviene de los alimentos que consume. La insulina es una hormona que ayuda a que la glucosa entre a las células para suministrarles energía.
+\n En la diabetes tipo 1, el cuerpo no produce insulina.\n En la diabetes tipo 2, la más común, el cuerpo no produce o no usa la insulina de manera adecuada. Sin suficiente insulina, la glucosa permanece en la sangre."
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/endiab_sint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="Síntomas: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enrc_sinttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp"
+            android:text="Los síntomas de la diabetes incluyen:
+
+\n\n-Aumento de la sed y de las ganas de orinar
+\n-Aumento del apetito
+\n-Fatiga
+\n-Visión borrosa
+\n-Entumecimiento u hormigueo en las manos o los pies
+\n-Úlceras que no cicatrizan
+\n-Pérdida de peso sin razón aparente
+\n\nLos síntomas de la diabetes tipo 1 pueden aparecer rápidamente, en cuestión de semanas. En cambio, los síntomas de la diabetes tipo 2 suelen progresar muy despacio, a lo largo de varios años, y pueden ser tan leves que a veces ni siquiera se notan." />
+
+        <TextView
+            android:id="@+id/enrc_causa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="Causa de la diabetes "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enrc_causainf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso2"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="-Causa de la diabetes tipo 1:\nLa diabetes tipo 1 ocurre cuando el sistema inmunitario, que combate las infecciones, ataca y destruye las células beta del páncreas que son las que producen la insulina.
+\n\n-Causa de la diabetes tipo 2:\nLa diabetes tipo 2, la forma más común de la enfermedad, es causada por varios factores, entre ellos, el estilo de vida y los genes.\n\n
+Generalmente las principales causas de la diabetes son: el sobrepeso, la obesidad, los genes y la falta de actividad física."
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:src="@drawable/diabetesimg" />
+
+        <TextView
+            android:id="@+id/enrc_prev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="Prevención "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enrc_previnf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso2"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="Mientras que la diabetes tipo 1 no se puede prevenir la de tipo 2 si y las investigaciones, como las que realiza el Programa de Prevención de la Diabetes, demuestran que se puede hacer mucho para reducir la probabilidad de desarrollar diabetes tipo 2.
+\n\nA continuación describimos algunos cambios que usted puede hacer para disminuir su riesgo:\n\na) Baje de peso y no vuelva a aumentarlo.
+\nb) Muévase más.\nc) Aliméntese sanamente la mayor parte del tiempo."
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:src="@drawable/diabetesdiet" />
+
+
+    </LinearLayout>
+
+</ScrollView>

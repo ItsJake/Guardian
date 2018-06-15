@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ill_fiebre">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/enrc_rc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="88dp"
+            android:paddingLeft="15dp"
+            android:text="Resfriado Común"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="30sp" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:src="@drawable/resfriado" />
+
+        <TextView
+            android:id="@+id/enrc_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:text="¿Qué es?"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/enrc_def"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El resfriado común es una infección viral de tu nariz y garganta (vías respiratorias altas). Por lo general es inofensivo, aunque podría no sentirse como tal. Muchos tipos de virus pueden causar un resfriado común."
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/enrc_sint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="Síntomas: "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enrc_sinttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:text="Los síntomas de un resfriado común generalmente aparecen de uno a tres días posteriores a la exposición al virus que causa el resfriado. Los signos y síntomas, que pueden variar dependiendo de cada persona, podrían incluir:\n\na)Escurrimiento o congestión nasal
+\nb)Dolor de garganta
+\nc)Tos
+\nd)Congestión
+\ne)Dolor corporal o dolor de cabeza leves
+\nf)Estornudos
+\ng)Fiebre de bajo grado
+\nh)Sentirte mal en general (malestar)" />
+
+        <TextView
+            android:id="@+id/enrc_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp1"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="Cuándo consultar a un médico "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enrc_coninf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso2"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="Para adultos — busca atención médica si tienes:
+
+\n\n-Fiebre mayor a 101.3° F (38.5° C)
+\n-Fiebre que dure cinco días o más o que regresa después de un periodo sin fiebre
+\n-Dificultad para respirar
+\n-Jadeos
+\n-Dolor intenso de garganta, cabeza o senos paranasales
+\n\nPara niños — en general, no es necesario que tu hijo vea a un médico por un resfriado común."
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="401dp"
+            android:layout_height="124dp"
+            android:src="@drawable/termometro" />
+
+        <TextView
+            android:id="@+id/enrc_prev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_infp2"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="Prevenciones "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enrc_previnf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fat_paso3"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+            android:text="a) Lávate las manos.\nb) Desinfecta tus cosas.\nc) Utiliza Pañuelos.\nd) No compartas objetos.\ne) Aléjate de los resfriados.\nf) Cuida de tu salud."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

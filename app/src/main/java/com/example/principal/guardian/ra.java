@@ -4,24 +4,20 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.view.View;
-import android.widget.Toast;
+
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Primeros_Auxilios.OnFragmentInteractionListener} interface
+ * {@link ra.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Primeros_Auxilios#newInstance} factory method to
+ * Use the {@link ra#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Primeros_Auxilios extends Fragment {
+public class ra extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -33,7 +29,7 @@ public class Primeros_Auxilios extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Primeros_Auxilios() {
+    public ra() {
         // Required empty public constructor
     }
 
@@ -43,11 +39,11 @@ public class Primeros_Auxilios extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Primeros_Auxilios.
+     * @return A new instance of fragment ra.
      */
     // TODO: Rename and change types and number of parameters
-    public static Primeros_Auxilios newInstance(String param1, String param2) {
-        Primeros_Auxilios fragment = new Primeros_Auxilios();
+    public static ra newInstance(String param1, String param2) {
+        ra fragment = new ra();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,40 +64,8 @@ public class Primeros_Auxilios extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_primeros__auxilios, container, false);
-        Button buttonrcp = (Button) view.findViewById(R.id.fa_0);
-        Button buttonra = (Button) view.findViewById(R.id.fa_1);
-
-        //BOTON NUMERO 0
-        buttonrcp.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                // do something
-                FragmentTransaction transaction=getFragmentManager().beginTransaction();
-                transaction.replace(R.id.content,new fav_rcp(),null); // give your fragment container id in first parameter
-                transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
-                transaction.commit();
-            }
-        });
-
-        //BOTON NUMERO 1
-        buttonra.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                // do something
-                FragmentTransaction transaction=getFragmentManager().beginTransaction();
-                transaction.replace(R.id.content,new ra(),null); // give your fragment container id in first parameter
-                transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
-                transaction.commit();
-            }
-        });
-        return view;
+        return inflater.inflate(R.layout.fragment_ra, container, false);
     }
-        
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -113,7 +77,6 @@ public class Primeros_Auxilios extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-
     }
 
     @Override

@@ -7,7 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Button;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,7 +66,38 @@ public class Enfermedades extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_enfermedades, container, false);
+        View view = inflater.inflate(R.layout.fragment_enfermedades, container, false);
+        Button buttonrc = (Button) view.findViewById(R.id.ill_0);
+        Button buttondia = (Button) view.findViewById(R.id.ill_1);
+
+        //BOTON NUMERO 0
+        buttonrc.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // do something
+                FragmentTransaction transaction=getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content,new ill_fiebre(),null); // give your fragment container id in first parameter
+                transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
+                transaction.commit();
+            }
+        });
+
+        //BOTON NUMERO 1
+        buttondia.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                // do something
+                FragmentTransaction transaction=getFragmentManager().beginTransaction();
+                transaction.replace(R.id.content,new ill_diabetes(),null); // give your fragment container id in first parameter
+                transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
+                transaction.commit();
+            }
+        });
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
